@@ -2,29 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
+<script lang="js">
+    const accordion = document.getElementsByClassName('col');
+    setTimeout(() => {
+        for (let i=0; i<accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    }, 1000)
+</script>
+
 <body class="bd-black">
-    <div class="container-fluid">
-        <div class="breadcrumbs" >
-            <ul>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-            </ul>
+<!-- Big cards -->
+<div class="container-how-we-help container-1">
+    <h2>How we help our clients</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>New products and growth</h4>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Cost Reduction</h4>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Customer Centricity</h4>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Regulation</h4>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+                </div>
+            </a>
         </div>
     </div>
+</div>
+
+<!-- Small Cards 4 x 1 -->
+<div class="container-how-we-help container-2">
+    <h2>How we help our clients</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Small Cards 3 x 1 -->
+<div class="container-how-we-help container-2">
+    <h2>How we help our clients</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological and independence strong</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
