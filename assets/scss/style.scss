@@ -1,0 +1,38 @@
+.bd-black {
+  background: black;
+  .container-fluid {
+    width: 100%;
+    height: 100%;
+
+    ul {
+      background: none;
+      li {
+        display: inline-block;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-align: left;
+
+        a {
+          text-decoration: none;
+          color: #BFBFBF;
+          &::after {
+            content: url("/assets/images/arrow_right_breadcrumb.png");
+            margin-right: 16px;
+            margin-left: 13px;
+          }
+        }
+        &:last-child {
+          a {
+            color: white;
+            &::after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+}

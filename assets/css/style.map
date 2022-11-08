@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		".bd-black {\n  background: black;\n}\n.container-fluid {\n  background-color: black;\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,KAAK;CAClB;;;AACD,AAAA,gBAAgB,CAAC;EACf,gBAAgB,EAAE,KAAK;CACxB"
+}
