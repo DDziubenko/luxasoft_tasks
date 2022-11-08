@@ -25,7 +25,7 @@
   margin-right: 16px;
   margin-left: 13px;
 }
-.bd-black .container-fluid ul li:last-child a {
+.bd-black .container-fluid ul li:hover a {
   color: white;
 }
 .bd-black .container-fluid ul li:last-child a::after {

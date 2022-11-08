@@ -1,11 +1,13 @@
 .bd-black {
   background: black;
+
   .container-fluid {
     width: 100%;
     height: 100%;
 
     ul {
       background: none;
+
       li {
         display: inline-block;
 
@@ -18,18 +20,23 @@
         a {
           text-decoration: none;
           color: #BFBFBF;
+
           &::after {
             content: url("/assets/images/arrow_right_breadcrumb.png");
             margin-right: 16px;
             margin-left: 13px;
           }
         }
-        &:last-child {
+
+        &:hover {
           a {
             color: white;
-            &::after {
-              content: '';
-            }
+          }
+        }
+
+        &:last-child {
+          a::after {
+            content: '';
           }
         }
       }

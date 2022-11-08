@@ -1,0 +1,33 @@
+.bd-black {
+    background: black;
+}
+.bd-black .container-fluid {
+    width: 100%;
+    height: 100%;
+}
+.bd-black .container-fluid ul {
+    background: none;
+}
+.bd-black .container-fluid ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.bd-black .container-fluid ul li a {
+    text-decoration: none;
+    color: #BFBFBF;
+}
+.bd-black .container-fluid ul li a::after {
+    content: url("/assets/images/arrow_right_breadcrumb.png");
+    margin-right: 16px;
+    margin-left: 13px;
+}
+.bd-black .container-fluid ul li:hover a {
+    color: white;
+}
+.bd-black .container-fluid ul li:last-child a::after {
+    content: "";
+}
