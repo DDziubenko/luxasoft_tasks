@@ -127,10 +127,111 @@
     </div>
 </section>
 
+<!-- Why Luxoft 4x1 -->
+
+<section class="container-why-luxoft container-2 cards-4">
+    <h2>Why Luxoft</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Luxoft 3x1 -->
+
+<section class="container-why-luxoft container-2 cards-4">
+    <h2>Why Luxoft</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independ and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div>
+                    <h4>Technological independence and strong partnerships</h4>
+                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
+                    <span> >>> </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
 <script lang="js">
     const howHelp = document.getElementsByClassName('container-how-we-help');
     if (howHelp.length) {
         const accordion = howHelp[0].getElementsByClassName('col');
+        if (accordion.length) {
+            function clearClasses() {
+                for (let i = 0; i < accordion.length; i++) {
+                    accordion[i].classList.remove('active')
+                }
+            }
+
+            for (let i = 0; i < accordion.length; i++) {
+                accordion[i].addEventListener('click', function (event) {
+                    if (event.target.className.includes('active')) {
+                        clearClasses();
+                    } else {
+                        clearClasses();
+                        event.target.classList.add('active');
+                    }
+                })
+            }
+        }
+    }
+    const WhyLuxoft = document.getElementsByClassName('container-why-luxoft');
+    if (WhyLuxoft.length) {
+        const accordion = WhyLuxoft[0].getElementsByClassName('col');
         if (accordion.length) {
             function clearClasses() {
                 for (let i = 0; i < accordion.length; i++) {
