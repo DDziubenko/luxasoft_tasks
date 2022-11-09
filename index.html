@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
-<script lang="js">
-    const accordion = document.getElementsByClassName('col');
-    setTimeout(() => {
-        for (let i=0; i<accordion.length; i++) {
-            accordion[i].addEventListener('click', function () {
-                this.classList.toggle('active')
-            })
-        }
-    }, 1000);
-</script>
-
 <body class="bd-black">
 <!-- Big cards -->
 <section class="container-how-we-help container-1">
@@ -137,5 +126,30 @@
         </div>
     </div>
 </section>
+
+<script lang="js">
+    const howHelp = document.getElementsByClassName('container-how-we-help');
+    if (howHelp.length) {
+        const accordion = howHelp[0].getElementsByClassName('col');
+        if (accordion.length) {
+            function clearClasses() {
+                for (let i = 0; i < accordion.length; i++) {
+                    accordion[i].classList.remove('active')
+                }
+            }
+
+            for (let i = 0; i < accordion.length; i++) {
+                accordion[i].addEventListener('click', function (event) {
+                    if (event.target.className.includes('active')) {
+                        clearClasses();
+                    } else {
+                        clearClasses();
+                        event.target.classList.add('active');
+                    }
+                })
+            }
+        }
+    }
+</script>
 </body>
 </html>
