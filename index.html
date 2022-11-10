@@ -5,26 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/scss/style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 
 <body class="bd-black">
-    <div class="container-fluid">
-        <div class="breadcrumbs" >
-            <ul>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-                <li>
-                    <a href="/">Breadcrumbs 01</a>
-                </li>
-            </ul>
+    <section class="awards-round">
+        <h2 class="awards-round__header">Awards</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h4 class="swiper-slide__header">“Best of Show”</h4>
+                    <p class="swiper-slide__text">Luxoft’s Mobile Banking Application</p>
+                    <span class="swiper-slide__category">Finovate’s <br> European event</span>
+                    <span class="swiper-slide__year">2014</span>
+                </div>
+                <div class="swiper-slide">
+                    <h4 class="swiper-slide__header">Award of Excellence</h4>
+                    <p class="swiper-slide__text">Composing Software campaign and Luxoft Technology Series</p>
+                    <span class="swiper-slide__category">Business Marketing Association</span>
+                    <span class="swiper-slide__year">2014</span>
+                </div>
+                <div class="swiper-slide">
+                    <h4 class="swiper-slide__header">“Best of Show”</h4>
+                    <p class="swiper-slide__text">Luxoft’s Mobile Banking Application</p>
+                    <span class="swiper-slide__category">Finovate’s <br> European event</span>
+                    <span class="swiper-slide__year">2014</span>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            centeredSlides: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                depth: -80,
+                rotate: 0,
+                scale: 0.73,
+                slideShadows: false,
+            },
+            initialSlide: 1,
+            maxBackfaceHiddenSlides: 3,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
