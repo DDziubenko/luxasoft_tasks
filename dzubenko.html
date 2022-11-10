@@ -84,81 +84,51 @@
     </div>
 </section>
 
-<!-- Why Luxoft 4x1 -->
-
-<section class="container-why-luxoft container-2 cards-4">
-    <h2>Why Luxoft</h2>
-    <div class="row">
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+<!-- Why Luxoft 4 x 1 -->
+<section class="why-luxoft why-luxoft--cards-4">
+    <h2 class="why-luxoft__title">Why Luxoft</h2>
+    <div class="why-luxoft__row">
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
     </div>
 </section>
 
-<!-- Why Luxoft 3x1 -->
-
-<section class="container-why-luxoft container-2 cards-4">
-    <h2>Why Luxoft</h2>
-    <div class="row">
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independ and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+<!-- Why Luxoft 3 x 1 -->
+<section class="why-luxoft why-luxoft--cards-3">
+    <h2 class="why-luxoft__title">Why Luxoft</h2>
+    <div class="why-luxoft__row">
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
-        <div class="col">
-            <a href="#">
-                <div>
-                    <h4>Technological independence and strong partnerships</h4>
-                    <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network solutions and the support your market.</p>
-                    <span> >>> </span>
-                </div>
-            </a>
+        <div class="row__col">
+            <h4 class="col__title">Technological independence and strong partnerships</h4>
+            <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.</p>
+            <span class="col__arrows"> >>> </span>
         </div>
     </div>
 </section>
@@ -186,23 +156,23 @@
             }
         }
     }
-    const WhyLuxoft = document.getElementsByClassName('container-why-luxoft');
+    const WhyLuxoft = document.getElementsByClassName('why-luxoft');
     if (WhyLuxoft.length) {
-        const accordion = WhyLuxoft[0].getElementsByClassName('col');
+        const accordion = WhyLuxoft[0].getElementsByClassName('row__col');
         if (accordion.length) {
             function clearClasses() {
                 for (let i = 0; i < accordion.length; i++) {
-                    accordion[i].classList.remove('active')
+                    accordion[i].classList.remove('row__col--active')
                 }
             }
 
             for (let i = 0; i < accordion.length; i++) {
                 accordion[i].addEventListener('click', function (event) {
-                    if (event.target.className.includes('active')) {
+                    if (accordion[i].className.includes('row__col--active')) {
                         clearClasses();
                     } else {
                         clearClasses();
-                        event.target.classList.add('active');
+                        accordion[i].classList.add('row__col--active');
                     }
                 })
             }

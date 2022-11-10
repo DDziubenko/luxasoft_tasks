@@ -470,6 +470,147 @@ template {
       .bd-black .how-we-help--style-2 .how-we-help__row .row__col .col__title {
         margin: 0 0 64px 0;
         font-size: 28px; }
+  .bd-black .why-luxoft {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 120px; }
+    .bd-black .why-luxoft .why-luxoft__title {
+      margin-bottom: 40px;
+      font-style: normal;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: center; }
+    .bd-black .why-luxoft .why-luxoft__row {
+      display: flex; }
+      .bd-black .why-luxoft .why-luxoft__row .row__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        margin-right: 24px;
+        padding: 24px 24px 19px 24px;
+        border-radius: 14px;
+        background: #1A1A1A; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col:last-child {
+          margin-right: 0; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col .col__title {
+          margin: 0;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 130%;
+          color: white; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col .col__desc {
+          margin: 24px 0 0;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 130%;
+          color: transparent;
+          transition: color .2s ease-in; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col .col__arrows {
+          margin: 29px 0 0 4px;
+          font-size: 28px; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col .col__title, .bd-black .why-luxoft .why-luxoft__row .row__col .col__desc {
+          -webkit-user-select: unset;
+          -khtml-user-select: unset;
+          -moz-user-select: unset;
+          -ms-user-select: unset;
+          -o-user-select: unset;
+          user-select: unset; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col:hover .col__desc {
+          color: white; }
+    @media screen and (max-width: 1274px) {
+      .bd-black .why-luxoft .why-luxoft__row {
+        flex-wrap: wrap; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col {
+          width: calc(33% - 13px);
+          margin-bottom: 20px; }
+          .bd-black .why-luxoft .why-luxoft__row .row__col:nth-child(3) {
+            margin-right: 0; }
+          .bd-black .why-luxoft .why-luxoft__row .row__col:last-child {
+            width: 100%; }
+      .bd-black .why-luxoft--cards-3 .why-luxoft__row {
+        flex-wrap: nowrap; }
+        .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col {
+          width: auto;
+          margin-bottom: inherit; }
+          .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(3) {
+            margin-right: inherit; }
+          .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:last-child {
+            width: initial; } }
+    @media screen and (max-width: 1139px) {
+      .bd-black .why-luxoft .why-luxoft__row .row__col {
+        width: calc(50% - 12px);
+        margin-right: 20px; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col:nth-child(3) {
+          margin-right: 20px; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col:nth-child(2), .bd-black .why-luxoft .why-luxoft__row .row__col:nth-child(4) {
+          margin-right: 0; }
+        .bd-black .why-luxoft .why-luxoft__row .row__col:last-child {
+          width: calc(50% - 12px); }
+      .bd-black .why-luxoft--cards-3 .why-luxoft__row {
+        flex-wrap: wrap; }
+        .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(1), .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(2) {
+          width: calc(50% - 10px);
+          margin-bottom: 20px; }
+        .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:last-child {
+          width: 100%;
+          margin-right: 0; } }
+    @media screen and (max-width: 800px) {
+      .bd-black .why-luxoft {
+        padding: 24px 30px; } }
+    @media screen and (max-width: 650px) {
+      .bd-black .why-luxoft {
+        padding: 24px 16px; }
+        .bd-black .why-luxoft .why-luxoft__title {
+          margin-bottom: 24px;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: 0;
+          text-align: center; }
+        .bd-black .why-luxoft .why-luxoft__row {
+          flex-direction: column; }
+          .bd-black .why-luxoft .why-luxoft__row .row__col {
+            width: 100%;
+            min-height: inherit;
+            padding: 24px;
+            margin-right: 0;
+            margin-bottom: 16px;
+            height: auto; }
+            .bd-black .why-luxoft .why-luxoft__row .row__col:last-child {
+              width: 100%; }
+            .bd-black .why-luxoft .why-luxoft__row .row__col .col__title {
+              position: relative;
+              margin-bottom: 0;
+              padding-right: 30px;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 130%; }
+              .bd-black .why-luxoft .why-luxoft__row .row__col .col__title:after {
+                content: url("../images/plus.svg");
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                width: 30px;
+                height: 100%; }
+            .bd-black .why-luxoft .why-luxoft__row .row__col .col__desc, .bd-black .why-luxoft .why-luxoft__row .row__col .col__arrows {
+              display: none;
+              color: white; }
+            .bd-black .why-luxoft .why-luxoft__row .row__col--active .col__title::after {
+              content: url("../images/minus.svg");
+              height: 85%; }
+            .bd-black .why-luxoft .why-luxoft__row .row__col--active .col__desc {
+              display: block; }
+        .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(1), .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(2) {
+          width: 100%; } }
   .bd-black .custom-radius {
     display: flex;
     flex-direction: column;
@@ -671,13 +812,7 @@ template {
         color: white; }
     @media screen and (max-width: 576px) {
       .bd-black .container-why-luxoft.container-2 .col a div h4 {
-        position: relative;
-        margin: 0; }
-        .bd-black .container-why-luxoft.container-2 .col a div h4:after {
-          content: '+';
-          position: absolute;
-          top: 0;
-          right: -30px; }
+        position: relative; }
       .bd-black .container-why-luxoft.container-2 .col a div p {
         display: none;
         margin: 0;
