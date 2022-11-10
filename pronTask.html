@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+
+<body class="bd-black">
+<!-- Big cards -->
+<section class="custom-radius">
+  <div class="default">
+    <div class="box radius radius--base">
+      <h3>radius radius--base</h3>
+    </div>
+  </div>
+
+  <div class="default">
+    <div class="box radius radius--top">
+      <h3>radius radius--top</h3>
+    </div>
+    <div class="box radius radius--right">
+      <h3>radius radius--right</h3>
+    </div>
+    <div class="box radius radius--bottom">
+      <h3>radius radius--bottom</h3>
+    </div>
+    <div class="box radius radius--left">
+      <h3>radius radius--left</h3>
+    </div>
+  </div>
+
+  <div class="default">
+    <div class="box radius radius--top-left">
+      <h3>radius radius--top-left</h3>
+    </div>
+    <div class="box radius radius--top-right">
+      <h3>radius radius--top-right</h3>
+    </div>
+    <div class="box radius radius--bottom-right">
+      <h3>radius radius--bottom-right</h3>
+    </div>
+    <div class="box radius radius--bottom-left">
+      <h3>radius radius--bottom-left</h3>
+    </div>
+  </div>
+
+  <div class="default default--start">
+    <div class="box radius radius--separate-top">
+      <h3>radius radius--separate-top</h3>
+    </div>
+    <div class="box radius radius--separate-bottom">
+      <h3>radius radius--separate-bottom</h3>
+    </div>
+  </div>
+
+  <div class="default default--start">
+    <div class="box radius radius--top">
+      <img src="assets/images/gradient02.png" height="840" width="840"/>
+      <h3>radius radius--separate-top</h3>
+    </div>
+    <div class="box radius radius--bottom">
+      <h3>radius radius--separate-bottom</h3>
+      <img src="assets/images/gradient02.png" height="840" width="840"/>
+    </div>
+  </div>
+
+  <div class="default default--start">
+    <div class="box radius radius--top">
+      <h3>radius radius--separate-top</h3>
+
+      <button> Button radius</button>
+    </div>
+    <div class="box radius radius--bottom">
+      <h3>radius radius--separate-bottom</h3>
+
+      <input type="text" placeholder="form radius">
+    </div>
+  </div>
+</section>
+
+<script lang="js">
+  const howHelp = document.getElementsByClassName('how-we-help');
+  for (let j = 0; j < howHelp.length; j++) {
+    const accordion = howHelp[j].getElementsByClassName('row__col');
+    if (accordion.length) {
+      function clearClasses() {
+        for (let i = 0; i < accordion.length; i++) {
+          accordion[i].classList.remove('active')
+        }
+      }
+
+      for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function (event) {
+          if (accordion[i].className.includes('active')) {
+            clearClasses();
+          } else {
+            clearClasses();
+            accordion[i].classList.add('active');
+          }
+        })
+      }
+    }
+  }
+  const WhyLuxoft = document.getElementsByClassName('container-why-luxoft');
+  if (WhyLuxoft.length) {
+    const accordion = WhyLuxoft[0].getElementsByClassName('col');
+    if (accordion.length) {
+      function clearClasses() {
+        for (let i = 0; i < accordion.length; i++) {
+          accordion[i].classList.remove('active')
+        }
+      }
+
+      for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function (event) {
+          if (event.target.className.includes('active')) {
+            clearClasses();
+          } else {
+            clearClasses();
+            event.target.classList.add('active');
+          }
+        })
+      }
+    }
+  }
+</script>
+</body>
+</html>

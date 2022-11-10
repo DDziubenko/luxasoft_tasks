@@ -470,5 +470,258 @@ template {
       .bd-black .how-we-help--style-2 .how-we-help__row .row__col .col__title {
         margin: 0 0 64px 0;
         font-size: 28px; }
+  .bd-black .custom-radius {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 120px;
+    background-color: #1A1A1A; }
+    .bd-black .custom-radius .radius--base {
+      border-radius: 15px; }
+    .bd-black .custom-radius .radius--top {
+      border-radius: 15px 15px 0 0; }
+      .bd-black .custom-radius .radius--top input, .bd-black .custom-radius .radius--top button, .bd-black .custom-radius .radius--top img, .bd-black .custom-radius .radius--top::after, .bd-black .custom-radius .radius--top::before {
+        border-radius: 15px 15px 0 0; }
+      .bd-black .custom-radius .radius--top-left {
+        border-radius: 15px 0 0 0; }
+        .bd-black .custom-radius .radius--top-left input, .bd-black .custom-radius .radius--top-left button, .bd-black .custom-radius .radius--top-left img, .bd-black .custom-radius .radius--top-left::after, .bd-black .custom-radius .radius--top-left::before {
+          border-radius: 15px 0 0 0; }
+      .bd-black .custom-radius .radius--top-right {
+        border-radius: 0 15px 0 0; }
+        .bd-black .custom-radius .radius--top-right input, .bd-black .custom-radius .radius--top-right button, .bd-black .custom-radius .radius--top-right img, .bd-black .custom-radius .radius--top-right::after, .bd-black .custom-radius .radius--top-right::before {
+          border-radius: 0 15px 0 0; }
+    .bd-black .custom-radius .radius--right {
+      border-radius: 0 15px 15px 0; }
+      .bd-black .custom-radius .radius--right input, .bd-black .custom-radius .radius--right button, .bd-black .custom-radius .radius--right img, .bd-black .custom-radius .radius--right::after, .bd-black .custom-radius .radius--right::before {
+        border-radius: 0 15px 15px 0; }
+    .bd-black .custom-radius .radius--bottom {
+      border-radius: 0 0 15px 15px; }
+      .bd-black .custom-radius .radius--bottom input, .bd-black .custom-radius .radius--bottom button, .bd-black .custom-radius .radius--bottom img, .bd-black .custom-radius .radius--bottom::after, .bd-black .custom-radius .radius--bottom::before {
+        border-radius: 0 0 15px 15px; }
+      .bd-black .custom-radius .radius--bottom-right {
+        border-radius: 0 0 15px 0; }
+        .bd-black .custom-radius .radius--bottom-right input, .bd-black .custom-radius .radius--bottom-right button, .bd-black .custom-radius .radius--bottom-right img, .bd-black .custom-radius .radius--bottom-right::after, .bd-black .custom-radius .radius--bottom-right::before {
+          border-radius: 0 0 15px 0; }
+      .bd-black .custom-radius .radius--bottom-left {
+        border-radius: 0 0 0 15px; }
+        .bd-black .custom-radius .radius--bottom-left input, .bd-black .custom-radius .radius--bottom-left button, .bd-black .custom-radius .radius--bottom-left img, .bd-black .custom-radius .radius--bottom-left::after, .bd-black .custom-radius .radius--bottom-left::before {
+          border-radius: 0 0 0 15px; }
+    .bd-black .custom-radius .radius--separate-top {
+      border-radius: 15px 0 15px 0; }
+      .bd-black .custom-radius .radius--separate-top input, .bd-black .custom-radius .radius--separate-top button, .bd-black .custom-radius .radius--separate-top img, .bd-black .custom-radius .radius--separate-top::after, .bd-black .custom-radius .radius--separate-top::before {
+        border-radius: 15px 0 15px 0; }
+    .bd-black .custom-radius .radius--separate-bottom {
+      border-radius: 0 15px 0 15px; }
+      .bd-black .custom-radius .radius--separate-bottom input, .bd-black .custom-radius .radius--separate-bottom button, .bd-black .custom-radius .radius--separate-bottom img, .bd-black .custom-radius .radius--separate-bottom::after, .bd-black .custom-radius .radius--separate-bottom::before {
+        border-radius: 0 15px 0 15px; }
+    .bd-black .custom-radius .radius--left {
+      border-radius: 15px 0 0 15px; }
+      .bd-black .custom-radius .radius--left input, .bd-black .custom-radius .radius--left button, .bd-black .custom-radius .radius--left img, .bd-black .custom-radius .radius--left::after, .bd-black .custom-radius .radius--left::before {
+        border-radius: 15px 0 0 15px; }
+    .bd-black .custom-radius .default {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 60px; }
+      .bd-black .custom-radius .default .box {
+        width: calc(25% - 40px);
+        margin: 20px;
+        height: 250px;
+        background-color: blanchedalmond; }
+        .bd-black .custom-radius .default .box h3 {
+          margin: 16px;
+          font-size: 16px;
+          font-weight: 600;
+          color: black; }
+        .bd-black .custom-radius .default .box img {
+          width: 100%;
+          height: 182px; }
+        .bd-black .custom-radius .default .box button, .bd-black .custom-radius .default .box input {
+          margin: 10px; }
+  .bd-black .container-why-luxoft {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 120px; }
+    .bd-black .container-why-luxoft h2 {
+      margin-bottom: 40px;
+      font-style: normal;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: center; }
+    .bd-black .container-why-luxoft .row {
+      display: flex; }
+      .bd-black .container-why-luxoft .row .col {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-right: 24px;
+        border-radius: 14px; }
+        .bd-black .container-why-luxoft .row .col:last-child {
+          margin-right: 0; }
+        .bd-black .container-why-luxoft .row .col a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: white; }
+          .bd-black .container-why-luxoft .row .col a div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%; }
+            .bd-black .container-why-luxoft .row .col a div h4 {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 120%; }
+            .bd-black .container-why-luxoft .row .col a div p {
+              margin: 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 130%; }
+      @media screen and (max-width: 1200px) {
+        .bd-black .container-why-luxoft .row {
+          flex-wrap: wrap; }
+          .bd-black .container-why-luxoft .row .col {
+            width: calc(50% - 12px);
+            margin-bottom: 24px; }
+            .bd-black .container-why-luxoft .row .col:nth-child(2n) {
+              margin-right: 0; } }
+    .bd-black .container-why-luxoft.container-1 .col {
+      min-height: 396px;
+      padding: 92px 40px;
+      border: 1px solid white;
+      transition: all .2s ease-in;
+      transition-delay: .1s; }
+      .bd-black .container-why-luxoft.container-1 .col a div h4 {
+        margin: 0 0 32px 0; }
+      .bd-black .container-why-luxoft.container-1 .col:hover {
+        padding: 48px 40px;
+        background: linear-gradient(111.36deg, rgba(86, 8, 139, 0.6) 29.15%, rgba(173, 71, 151, 0.06) 108.07%);
+        border-color: transparent; }
+    @media screen and (max-width: 576px) {
+      .bd-black .container-why-luxoft.container-1 .col:hover {
+        padding: 24px;
+        background: none;
+        border: 1px solid white; }
+      .bd-black .container-why-luxoft.container-1 .col a div h4 {
+        position: relative;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left; }
+        .bd-black .container-why-luxoft.container-1 .col a div h4:after {
+          content: '+';
+          position: absolute;
+          top: 0;
+          right: -30px; }
+      .bd-black .container-why-luxoft.container-1 .col a div p {
+        display: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left; }
+      .bd-black .container-why-luxoft.container-1 .col.active {
+        background: linear-gradient(111.36deg, rgba(86, 8, 139, 0.6) 29.15%, rgba(173, 71, 151, 0.06) 108.07%);
+        border: none; }
+        .bd-black .container-why-luxoft.container-1 .col.active a div h4 {
+          margin-bottom: 24px; }
+          .bd-black .container-why-luxoft.container-1 .col.active a div h4::after {
+            content: '-'; }
+        .bd-black .container-why-luxoft.container-1 .col.active a div p {
+          display: block; } }
+    .bd-black .container-why-luxoft.container-2 .col {
+      padding: 24px 24px 19px 24px;
+      background: #1A1A1A; }
+      .bd-black .container-why-luxoft.container-2 .col a div h4 {
+        margin: 0 0 24px 0;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left; }
+      .bd-black .container-why-luxoft.container-2 .col a div p {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1A1A1A;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none; }
+      .bd-black .container-why-luxoft.container-2 .col a div span {
+        margin-left: 4px;
+        font-size: 28px; }
+      .bd-black .container-why-luxoft.container-2 .col:hover a div p {
+        -webkit-user-select: unset;
+        -khtml-user-select: unset;
+        -moz-user-select: unset;
+        -ms-user-select: unset;
+        -o-user-select: unset;
+        user-select: unset;
+        color: white; }
+    @media screen and (max-width: 576px) {
+      .bd-black .container-why-luxoft.container-2 .col a div h4 {
+        position: relative;
+        margin: 0; }
+        .bd-black .container-why-luxoft.container-2 .col a div h4:after {
+          content: '+';
+          position: absolute;
+          top: 0;
+          right: -30px; }
+      .bd-black .container-why-luxoft.container-2 .col a div p {
+        display: none;
+        margin: 0;
+        color: white; }
+      .bd-black .container-why-luxoft.container-2 .col a div span {
+        display: none; }
+      .bd-black .container-why-luxoft.container-2 .col.active a div h4 {
+        margin-bottom: 24px; }
+        .bd-black .container-why-luxoft.container-2 .col.active a div h4::after {
+          content: '-'; }
+      .bd-black .container-why-luxoft.container-2 .col.active a div p {
+        display: block; } }
+    .bd-black .container-why-luxoft.cards-3 .col a div h4 {
+      font-size: 28px; }
+    @media screen and (max-width: 576px) {
+      .bd-black .container-why-luxoft {
+        padding: 24px 16px; }
+        .bd-black .container-why-luxoft h2 {
+          margin-bottom: 24px;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: 0;
+          text-align: center; }
+        .bd-black .container-why-luxoft .row {
+          flex-direction: column; }
+          .bd-black .container-why-luxoft .row .col {
+            width: 100%;
+            min-height: inherit;
+            padding: 24px;
+            margin-right: 0;
+            margin-bottom: 16px; }
+            .bd-black .container-why-luxoft .row .col a {
+              pointer-events: none;
+              width: 100%;
+              height: 100%;
+              text-decoration: none;
+              color: white; }
+              .bd-black .container-why-luxoft .row .col a div h4 {
+                width: 83%;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0;
+                text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

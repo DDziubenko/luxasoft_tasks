@@ -666,6 +666,137 @@ template {
       }
     }
   }
+
+  .custom-radius {
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 120px;
+
+    background-color: #1A1A1A;
+
+    .radius {
+
+      &--base {
+        border-radius: 15px;
+      }
+
+      &--top {
+        border-radius: 15px 15px 0 0;
+        input, button, img, &::after, &::before{
+          border-radius: 15px 15px 0 0;
+        }
+
+        &-left{
+          border-radius: 15px 0 0 0;
+          input, button, img, &::after, &::before{
+            border-radius: 15px 0 0 0;
+          }
+        }
+
+        &-right{
+          border-radius: 0 15px 0 0;
+
+          input, button, img, &::after, &::before{
+            border-radius: 0 15px 0 0;
+          }
+        }
+      }
+
+      &--right {
+        border-radius: 0 15px 15px 0;
+
+        input, button, img, &::after, &::before{
+          border-radius: 0 15px 15px 0;
+        }
+      }
+
+      &--bottom {
+        border-radius: 0 0 15px 15px;
+
+        input, button, img, &::after, &::before{
+          border-radius: 0 0 15px 15px;
+        }
+
+        &-right {
+          border-radius: 0 0 15px 0;
+
+          input, button, img, &::after, &::before{
+            border-radius: 0 0 15px 0;
+          }
+        }
+
+        &-left{
+          border-radius: 0 0 0 15px;
+
+          input, button, img, &::after, &::before{
+            border-radius: 0 0 0 15px;
+          }
+        }
+      }
+
+      &--separate {
+        &-top {
+          border-radius: 15px 0 15px 0;
+
+          input, button, img, &::after, &::before{
+            border-radius: 15px 0 15px 0;
+          }
+        }
+
+        &-bottom {
+          border-radius: 0 15px 0 15px;
+
+          input, button, img, &::after, &::before{
+            border-radius: 0 15px 0 15px;
+          }
+        }
+      }
+
+      &--left {
+        border-radius: 15px 0 0 15px;
+
+        input, button, img, &::after, &::before{
+          border-radius: 15px 0 0 15px;
+        }
+      }
+    }
+
+    .default {
+      display: flex;
+      justify-content: flex-start;
+
+      width: 100%;
+      margin-bottom: 60px;
+
+      .box{
+        width: calc(25% - 40px);
+        margin: 20px;
+        height: 250px;
+        background-color: blanchedalmond;
+
+        h3 {
+          margin: 16px;
+
+          font-size: 16px;
+          font-weight: 600;
+
+          color: black;
+        }
+
+        img {
+          width: 100%;
+          height: 182px;
+        }
+
+        button, input {
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+
   .container-why-luxoft {
     display: flex;
     flex-direction: column;
@@ -849,7 +980,7 @@ template {
           div {
             h4 {
               margin: 0 0 24px 0;
-              
+
               font-size: 28px;
               font-weight: 700;
               line-height: 34px;
