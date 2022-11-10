@@ -383,6 +383,7 @@ template {
 
     .swiper {
       height: 543px;
+
       max-width: 468px;
       overflow: visible;
       &-slide {
@@ -505,7 +506,7 @@ template {
 
         background-color: #1A1A1A;
         border-radius: 14px;
-        background-image: url("/assets/images/leaves.svg");
+        background-image: url("../images/leaves.svg");
         background-repeat: no-repeat;
         background-size: 92% 100%;
         background-position: 50% 50%;
@@ -551,6 +552,7 @@ template {
       }
     }
   }
+
   .awards-big {
     display: flex;
     flex-direction: column;
@@ -591,7 +593,7 @@ template {
           padding: 153px 100px 121px;
           margin: 0 24px 0 0;
 
-          background-image: url("/assets/images/info-block.png");
+          background-image: url("../images/info-block.png");
           background-size: cover;
           border-radius: 14px;
           &__text {
@@ -699,7 +701,7 @@ template {
 
               background-color: #1A1A1A;
               border-radius: 14px;
-              background-image: url("/assets/images/leaves.svg");
+              background-image: url("../images/leaves.svg");
               background-repeat: no-repeat;
               background-size: 92% 100%;
               background-position: 50% 50%;

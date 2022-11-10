@@ -15,7 +15,7 @@
     <section class="awards-round">
         <h2 class="awards-round__header">Awards</h2>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper swiper--v1">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -39,33 +39,11 @@
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination-v"></div>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: false,
-            centeredSlides: true,
-            effect: 'coverflow',
-            coverflowEffect: {
-                depth: -80,
-                rotate: 0,
-                scale: 0.73,
-                slideShadows: false,
-            },
-            initialSlide: 1,
-            maxBackfaceHiddenSlides: 3,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <script src="assets/js/awards.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
 <section class="awards-big">
   <h2 class="awards-big__header">Awards</h2>
   <!-- Slider main container -->
-  <div class="swiper">
+  <div class="swiper swiper--v3">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -25,7 +25,7 @@
             <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system, and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps.</p>
           </div>
           <div class="swiper-slide-info__about">
-            <img class="avatar" src="/assets/images/gradient02.png" alt="avatar">
+            <img class="avatar" src="assets/images/avatar.png" alt="avatar">
             <p class="name">Name Surname <br>
               <span class="info" >Solution Lead, <br> Intelligent Automation</span>
             </p>
@@ -56,7 +56,7 @@
             <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system, and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps.</p>
           </div>
           <div class="swiper-slide-info__about">
-            <img class="avatar" src="/assets/images/gradient02.png" alt="avatar">
+            <img class="avatar" src="assets/images/avatar.png" alt="avatar">
             <p class="name">Name Surname <br>
               <span class="info" >Solution Lead, <br> Intelligent Automation</span>
             </p>
@@ -87,7 +87,7 @@
             <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system, and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps.</p>
           </div>
           <div class="swiper-slide-info__about">
-            <img class="avatar" src="/assets/images/gradient02.png" alt="avatar">
+            <img class="avatar" src="assets/images/avatar.png" alt="avatar">
             <p class="name">Name Surname <br>
               <span class="info" >Solution Lead, <br> Intelligent Automation</span>
             </p>
@@ -118,7 +118,7 @@
             <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system, and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps.</p>
           </div>
           <div class="swiper-slide-info__about">
-            <img class="avatar" src="/assets/images/gradient02.png" alt="avatar">
+            <img class="avatar" src="assets/images/avatar.png" alt="avatar">
             <p class="name">Name Surname <br>
               <span class="info" >Solution Lead, <br> Intelligent Automation</span>
             </p>
@@ -145,26 +145,10 @@
       </div>
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination swiper-pagination--v3"></div>
   </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    centeredSlides: false,
-    initialSlide: 0,
-    slidesPerView: 1,
-    spaceBetween: 24,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
+<script src="assets/js/awards.js"></script>
 </body>
 </html>
