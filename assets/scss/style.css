@@ -611,6 +611,74 @@ template {
               display: block; }
         .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(1), .bd-black .why-luxoft--cards-3 .why-luxoft__row .row__col:nth-child(2) {
           width: 100%; } }
+  .bd-black .accordion-section {
+    padding: 60px 0; }
+    .bd-black .accordion-section * {
+      color: white; }
+    .bd-black .accordion-section .accordion-section__container {
+      width: 900px;
+      margin: auto; }
+      .bd-black .accordion-section .accordion-section__container .container__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%; }
+      .bd-black .accordion-section .accordion-section__container .container__article {
+        margin-top: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%; }
+      .bd-black .accordion-section .accordion-section__container .container__accordion {
+        margin-top: 32px; }
+        .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row {
+          cursor: pointer;
+          padding: 24px 0;
+          border-color: #ffffff;
+          border-style: solid;
+          border-width: 1px 0 0; }
+          .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row .row__title {
+            position: relative;
+            margin: 0;
+            padding-right: 30px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 130%; }
+            .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row .row__title:after {
+              content: url("../images/plus.svg");
+              position: absolute;
+              top: 0;
+              right: 0;
+              display: flex;
+              align-items: center;
+              width: 30px;
+              height: 100%; }
+          .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row .row__desc {
+            display: none;
+            margin: 24px 0 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%; }
+          .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row--open .row__title::after {
+            content: url("../images/minus.svg");
+            height: 85%; }
+          .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row--open .row__desc {
+            display: block; }
+          .bd-black .accordion-section .accordion-section__container .container__accordion .accordion__row:last-child {
+            border-width: 1px 0; }
+    .bd-black .accordion-section.accordion-section--white {
+      background-color: white; }
+      .bd-black .accordion-section.accordion-section--white * {
+        color: #000000; }
+      .bd-black .accordion-section.accordion-section--white .container__accordion .accordion__row {
+        border-color: #000000; }
+        .bd-black .accordion-section.accordion-section--white .container__accordion .accordion__row .row__title:after {
+          content: url("../images/plus-black.svg"); }
+        .bd-black .accordion-section.accordion-section--white .container__accordion .accordion__row--open .row__title::after {
+          content: url("../images/minus-black.svg"); }
+      .bd-black .accordion-section.accordion-section--white .accordion__row {
+        border-color: #000000; }
   .bd-black .custom-radius {
     display: flex;
     flex-direction: column;

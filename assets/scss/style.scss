@@ -929,6 +929,142 @@ template {
     }
   }
 
+  .accordion-section {
+    padding: 60px 0;
+
+    * {
+      color: white;
+    }
+
+    .accordion-section__container {
+      width: 900px;
+      margin: auto;
+
+      .container {
+        &__title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 120%;
+        }
+
+        &__article {
+          margin-top: 32px;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 130%;
+        }
+
+        &__accordion {
+          margin-top: 32px;
+
+          .accordion__row {
+            cursor: pointer;
+            padding: 24px 0;
+            border-color: #ffffff;
+            border-style: solid;
+            border-width: 1px 0 0;
+
+            .row {
+              &__title {
+                position: relative;
+
+                margin: 0;
+                padding-right: 30px;
+
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 130%;
+
+                &:after {
+                  content: url("../images/plus.svg");
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  display: flex;
+                  align-items: center;
+
+                  width: 30px;
+                  height: 100%;
+                }
+              }
+
+              &__desc {
+                display: none;
+
+                margin: 24px 0 0;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+              }
+            }
+
+            &--open {
+              .row {
+                &__title {
+                  &::after {
+                    content: url("../images/minus.svg");
+                    height: 85%;
+                  }
+                }
+
+                &__desc {
+                  display: block;
+                }
+              }
+            }
+
+            &:last-child {
+              border-width: 1px 0;
+            }
+          }
+        }
+      }
+    }
+
+    &.accordion-section--white {
+      background-color: white;
+
+      * {
+        color: #000000;
+      }
+
+      .container {
+        &__accordion {
+          .accordion__row {
+            border-color: #000000;
+
+            .row {
+              &__title {
+
+                &:after {
+                  content: url("../images/plus-black.svg");
+                }
+              }
+            }
+
+            &--open {
+              .row {
+                &__title {
+                  &::after {
+                    content: url("../images/minus-black.svg");
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .accordion__row {
+        border-color: #000000;
+      }
+    }
+  }
   .custom-radius {
     display: flex;
     flex-direction: column;
